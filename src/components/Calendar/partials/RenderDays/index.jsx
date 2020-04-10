@@ -32,7 +32,8 @@ function RenderDays({
             }}>
               <Text 
               style={{
-                fontSize: 15
+                fontSize: 15,
+                fontWeight: 'bold'
               }}>{day.label}</Text>
             </View>
           )
