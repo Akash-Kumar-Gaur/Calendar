@@ -12,7 +12,7 @@ function RenderDays({
   const firstDay = getDayOfWeek(getStartOfMonth(activeMonth)) || 7;
   const daysArray = Array(firstDay - 1).fill({ label: '', actualDate: '' });
   for (var i = 0; i < totalActiveDays; i++) {
-    daysArray.push({ label: i + 1, actualDate: addDays(getStartOfMonth(activeMonth), i)});
+    daysArray.push({ label: i + 1, actualDate: addDays(getStartOfMonth(activeMonth), i) });
   }
 
   return (
@@ -30,7 +30,10 @@ function RenderDays({
               backgroundColor: (getFormattedDate(day.actualDate, dateFormat) === moment().format(dateFormat)) ? '#d4d6dc70' : '#fff',
               borderRadius: 25
             }}>
-              <Text>{day.label}</Text>
+              <Text 
+              style={{
+                fontSize: 15
+              }}>{day.label}</Text>
             </View>
           )
         })

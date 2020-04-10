@@ -20,7 +20,8 @@ function WeekDaysDisplay() {
             <View style={{ width: '14%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: .3}}>
               <Text
                 style={{
-                  color: '#a7abb6'
+                  color: '#a7abb6',
+                  fontSize: 13
                 }}
               >{weekday}</Text>
             </View>
